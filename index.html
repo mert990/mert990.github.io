@@ -135,27 +135,38 @@
       <div class="container">
         <h2 class="section-title">Hemen başlayın</h2>
         <p class="section-lead">Bize bir mesaj gönderin, 24 saat içinde size dönüş yapalım.</p>
-        <form class="contact-form" action="#" method="post">
-          <div class="form-row">
-            <label for="name">Adınız</label>
-            <input type="text" id="name" name="name" required placeholder="Adınız soyadınız" />
+        <div class="contact-layout">
+          <div class="contact-form-wrap">
+            <form class="contact-form" action="#" method="post">
+              <div class="form-row">
+                <label for="name">Adınız</label>
+                <input type="text" id="name" name="name" required placeholder="Adınız soyadınız" />
+              </div>
+              <div class="form-row">
+                <label for="email">E-posta</label>
+                <input type="email" id="email" name="email" required placeholder="ornek@email.com" />
+              </div>
+              <div class="form-row">
+                <label for="message">Mesajınız</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Vize türü, gideceğiniz ülke ve tercih ettiğiniz tarih aralığı..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Mesaj gönder</button>
+            </form>
+            <div class="contact-info">
+              <p><strong>Adres:</strong> Mustafa Kemal Mah. Dumlupınar Bulvarı Tepe Prime A Blok No:266 Asma Kat D. No:18, 06510 Çankaya / Ankara</p>
+              <p><strong>Telefon:</strong> 0312 911 32 18</p>
+              <p><strong>GSM:</strong> 0501 571 40 57</p>
+              <p><strong>Faks:</strong> 0850 522 34 03</p>
+              <p><strong>E-posta:</strong> <a href="mailto:info@alliancevize.com">info@alliancevize.com</a></p>
+            </div>
           </div>
-          <div class="form-row">
-            <label for="email">E-posta</label>
-            <input type="email" id="email" name="email" required placeholder="ornek@email.com" />
+          <div class="contact-map-wrap">
+            <p class="contact-map-label">Konumumuz</p>
+            <div class="contact-map">
+              <iframe src="https://www.google.com/maps?q=Tepe+Prime+A+Blok+Dumlupinar+Bulvari+06510+Cankaya+Ankara+Turkey&z=16&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Alliance Vize konum haritası"></iframe>
+            </div>
+            <a href="https://www.google.com/maps/search/?api=1&query=Tepe+Prime+A+Blok+Dumlupinar+Bulvari+06510+Cankaya+Ankara" class="contact-map-link" target="_blank" rel="noopener">Haritada aç →</a>
           </div>
-          <div class="form-row">
-            <label for="message">Mesajınız</label>
-            <textarea id="message" name="message" rows="4" required placeholder="Vize türü, gideceğiniz ülke ve tercih ettiğiniz tarih aralığı..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">Mesaj gönder</button>
-        </form>
-        <div class="contact-info">
-          <p><strong>Adres:</strong> Mustafa Kemal Mah. Dumlupınar Bulvarı Tepe Prime A Blok No:266 Asma Kat D. No:18, 06510 Çankaya / Ankara</p>
-          <p><strong>Telefon:</strong> 0312 911 32 18</p>
-          <p><strong>GSM:</strong> 0501 571 40 57</p>
-          <p><strong>Faks:</strong> 0850 522 34 03</p>
-          <p><strong>E-posta:</strong> <a href="mailto:info@alliancevize.com">info@alliancevize.com</a></p>
         </div>
       </div>
     </section>
