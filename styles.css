@@ -267,6 +267,13 @@ img { max-width: 100%; height: auto; display: block; }
   font-size: 0.95rem;
 }
 
+.service-card .service-note {
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-border);
+  font-size: 0.85rem;
+}
+
 /* --- Destinations (highlighted + all others) --- */
 .destinations-block {
   margin-top: var(--space-xl);
