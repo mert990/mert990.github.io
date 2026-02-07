@@ -137,7 +137,10 @@
         <p class="section-lead">Bize bir mesaj gönderin, 24 saat içinde size dönüş yapalım.</p>
         <div class="contact-layout">
           <div class="contact-form-wrap">
-            <form class="contact-form" action="#" method="post">
+            <!-- Formspree: formspree.io adresinde form oluşturup e-posta olarak info@alliancevize.com ekleyin, aldığınız form ID ile YOUR_FORMSPREE_ID yerini değiştirin -->
+            <form class="contact-form" action="https://formspree.io/f/mgolendl" method="post">
+              <input type="hidden" name="_subject" value="Alliance Vize web sitesinden yeni mesaj" />
+              <input type="hidden" name="_replyto" id="form-replyto" value="" />
               <div class="form-row">
                 <label for="name">Adınız</label>
                 <input type="text" id="name" name="name" required placeholder="Adınız soyadınız" />
