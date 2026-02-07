@@ -517,6 +517,56 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .contact-info p { margin: var(--space-xs) 0 0; }
 
+.whatsapp-link {
+  color: #25D366;
+  font-weight: 500;
+}
+.whatsapp-link:hover {
+  text-decoration: underline;
+}
+
+/* --- WhatsApp floating button --- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.55);
+  color: #fff;
+}
+
+.whatsapp-float-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.whatsapp-float-text {
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .whatsapp-float-text { display: none; }
+  .whatsapp-float { padding: 0.85rem; }
+  .whatsapp-float-icon { width: 32px; height: 32px; }
+}
+
 /* --- Footer --- */
 .site-footer {
   border-top: 2px solid var(--color-border);
